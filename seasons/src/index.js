@@ -23,9 +23,7 @@ class App extends React.Component {
       return <div>Latitude: {this.state.lat}</div>;
     }
 
-    if (!this.state.errorMessage && !this.state.lat) {
-      return <div>Loading</div>;
-    }
+    return <div>Loading</div>;
   }
 }
 
