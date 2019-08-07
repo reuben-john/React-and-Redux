@@ -12,8 +12,7 @@ class App extends React.Component {
     );
   }
 
-  // Must be defined for react to render
-  render() {
+  renderContent() {
     if (this.state.errorMessage && !this.state.lat) {
       return <div>Error: {this.state.errorMessage}</div>;
     }
@@ -24,6 +23,10 @@ class App extends React.Component {
 
     return <Spinner message="Please accept location request" />;
   }
-}
 
+  // Must be defined for react to render
+  render() {
+    return <div className="border red">{this.renderContent()}</div>;
+  }
+}
 ReactDOM.render(<App />, document.querySelector('#root'));
