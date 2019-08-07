@@ -16,9 +16,9 @@ const SeasonDisplay = props => {
   const { text, icon: iconName } = seasonConfig[season];
   return (
     <div>
-      <i className={`${iconName} icon`}></i>
+      <i className={`${iconName} icon massive`}></i>
       <h1>{text}</h1>
-      <i className={`${iconName} icon`}></i>
+      <i className={`${iconName} icon massive`}></i>
     </div>
   );
 };
